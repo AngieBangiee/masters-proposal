@@ -32,7 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'restaurant_review.apps.RestaurantReviewConfig',
+    'mastersproposal.apps.MastersproposalConfig',
+    #'restaurant_review.apps.RestaurantReviewConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -91,10 +92,10 @@ WSGI_APPLICATION = 'azureproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ['DBNAME'],
-        'HOST': os.environ['DBHOST'],
-        'USER': os.environ['DBUSER'],
-        'PASSWORD': os.environ['DBPASS'] 
+        'NAME': 'postgres',
+        'HOST': 'localhost',
+        'USER': 'postgres',
+        'PASSWORD': '!P3pp3r!' 
     }
 }
 
@@ -136,6 +137,9 @@ USE_TZ = True
 
 STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
