@@ -1,19 +1,18 @@
+{% extends "mastersproposal/base.html" %}
 {% load static %} 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+{% block meta %} 
     <title>Page title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content=""> 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bulma.mp.css' %}">
-    <link rel="icon" href="{% static 'images/favicon.ico' %}">
-    <script src="{% static 'js/main.js' %}"></script>
-  </head>
-  <body> 
+    {% endblock meta %} 
+
+    {% block hero %}  
       <section class="hero hero-cover is-medium">
+        {% endblock hero %}
+
+
         <div class="is-relative">
           <nav class="navbar px-3 py-4 is-fixed-top"style="background-color: #333A56;">
             <div class="navbar-brand">
@@ -34,7 +33,10 @@
               <div class="navbar-item"><a class="button is-dark" href="#">Order</a></div>
             </div>
           </nav>
-          <div class="container hero-body">
+
+          {% block herobody %}
+          <div class="hero-body">
+            <div class="container">
             <div class="mb-5 is-vcentered columns">
               <div class="columns is-centered">
                 <div class="column is-8 mt-6 has-text-centered"> 
@@ -45,7 +47,8 @@
               </div>
             </div> 
             </div>
-            </div>   
+            </div> 
+            {% endblock herobody %} 
       </section>
         
       <section class="section has-background-success">

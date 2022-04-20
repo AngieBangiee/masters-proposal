@@ -1,40 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+{% extends "mastersproposal/base.html" %}
+{% load static %} 
+{% block meta %}
     <title>Page title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="css/bulma/bulma.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico">
-    <script src="js/main.js"></script>
-  </head>
-  <body>
-    <div class="">
-        
-      <section class="about-cover is-relative is-small">
-        <div class="is-relative">
-          <nav class="navbar px-3 py-4" style="background-color: transparent;">
-            <div class="navbar-brand">
-              <a class="navbar-item is-hidden-touch" href="#">
-                <img class="image is-fullwidth" src="bulma-plain-assets/logos/plainb-logo-white.svg" alt="" width="96px">
-              </a>
-              <a class="navbar-item is-hidden-desktop" href="#">
-                <img class="image" src="bulma-plain-assets/logos/plainb-logo-white.svg" alt="" width="96px">
-              </a>
-              <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-            <div class="navbar-menu">
-              <div class="navbar-end"><a class="navbar-item" href="#">About</a><a class="navbar-item" href="#">Services</a><a class="navbar-item" href="#">Proposals</a><a class="navbar-item" href="#">Theses</a><a class="navbar-item" href="#">Prices</a><a class="navbar-item" href="#">Topics</a></div>
-              <div class="navbar-item"><a class="button is-primary" href="#">Order</a></div>
-            </div>
-          </nav>
+    <meta name="author" content=""> 
+    {% endblock meta %} 
+
+    {% block hero %}  
+    <section class="about-cover is-relative is-small">
+      {% endblock hero %}
+       
+           
           <div class="container p-3">
             <div class="mb-5 is-vcentered columns">
               <div class="columns is-multiline p-2 is-centered">
@@ -47,16 +25,7 @@
             </div>
           </div>
         </div>   
-      </section>
-        
-      <nav class="navbar has-background-primary breadcrumb py-3 px-3" aria-label="breadcrumbs">
-        <ul>
-          <li><a href="#">Bulma</a></li>
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Components</a></li>
-          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
-        </ul> 
-      </nav>
+      </section> 
         
       <section class="section has-background-success">
         <div class="container">
@@ -104,8 +73,8 @@
               </div>
             </div>
           </div>
+
           <div class="columns is-multiline">
-      
             <div class="column is-4 mb-6">
               <div class="box p-6 has-background-success has-text-centered" style="height: 100%">
                 <h4 class="is-size-4 has-text-weight-bold has-text-primary">Our writers are top in their fields</h4>
