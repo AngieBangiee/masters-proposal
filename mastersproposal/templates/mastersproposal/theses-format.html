@@ -1,68 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+{% extends "mastersproposal/base.html" %}
+{% load static %} 
+{% block meta %}
     <title>Page title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="css/bulma/bulma.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico">
-    <script src="js/main.js"></script>
-  </head>
-  <body>
-    <div class="">
-        
-      <section class="thesis-fomat-cover is-relative is-small">
-        <div class="is-relative">
-          <nav class="navbar px-3 py-4" style="background-color: transparent;">
-            <div class="navbar-brand">
-              <a class="navbar-item is-hidden-touch" href="#">
-                <img class="image is-fullwidth" src="bulma-plain-assets/logos/plainb-logo-white.svg" alt="" width="96px">
-              </a>
-              <a class="navbar-item is-hidden-desktop" href="#">
-                <img class="image" src="bulma-plain-assets/logos/plainb-logo-white.svg" alt="" width="96px">
-              </a>
-              <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-            <div class="navbar-menu">
-              <div class="navbar-end"><a class="navbar-item" href="#">About</a><a class="navbar-item" href="#">Services</a><a class="navbar-item" href="#">Proposals</a><a class="navbar-item" href="#">Theses</a><a class="navbar-item" href="#">Prices</a><a class="navbar-item" href="#">Topics</a></div>
-              <div class="navbar-item"><a class="button is-primary" href="#">Order</a></div>
-            </div>
-          </nav>
-          <div class="container p-3">
-            <div class="mb-5 is-vcentered columns">
-              <div class="columns is-multiline p-2 is-centered">
-                <div class="column is-8 mt-6 has-text-centered"> 
-                  <h2 class="has-text-white mt-2 mb-4 is-size-2-desktop is-size-5-mobile is-size-4-tablet has-text-weight-bold">Busy Professional in need of a Masters Thesis or Masters Proposal?</h2>
-                  <p class="subtitle is-size-6-mobile is-size-6-tablet has-text-grey-lighter">Take the stress out your masters Program! Let our writers provide a custom model thesis!</p>
-                  <div class="buttons is-centered"><a class="button is-primary mb-5 is-medium" href="#">Order a Paper Now!</a></div> 
-                </div>  
-              </div>
-            </div>
-          </div>
-        </div>   
-      </section>
-        
-      <nav class="navbar has-background-primary breadcrumb py-3 px-3" aria-label="breadcrumbs">
-        <ul>
-          <li><a href="#">Bulma</a></li>
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Components</a></li>
-          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
-        </ul> 
-      </nav>
-        
-      <section class="section has-background-success">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-8">
-              <div class="box has-background-white-ter p-5">
+    {% endblock meta %}  
+         
+        {% block content %}  
                 <h2 class="mb-5 is-size-2-desktop is-size-4-mobile is-size-4-tablet has-text-weight-bold has-text-centered has-text-primary">Format of All Masters Theses Produced by MastersProposal.com</h2>
                 <div class="has-text-dark mb-5 conStyle">  
                   <p class="has-text-weight-bold is-size-4-desktop is-size-6-mobile is-size-6-tablet">Elements of the Thesis</p>
@@ -87,7 +32,7 @@
                       <span class="mt-1 has-text-white mr-3 is-flex has-background-primary is-justify-content-center is-align-items-center is-flex-shrink-0" style="width: 32px;height: 32px; border-radius: 50% !important;">3</span>
                       <div class="is-flex-direction-column">
                         <p class="has-text-weight-bold is-size-4-desktop is-size-6-mobile is-size-6-tablet">Methodology</p>
-                        <ol>The third chapter of the Master’s Thesis is the Materials and Methods, sometimes also referred to as the Study Design and Methodology.  It is in this section that the writer describes the sample population and procedures used in enough detail that others could replicate the study and verify its validity.  This section should begin with specific data on the number of study participants, how they were chosen, and relevant demographic information.  The writer may also present the rationale for the specific sample size used.  Next, all tools and instruments used in the study should be described.  If such tools are described in detail elsewhere in the literature, the writer can indicate this along with a relevant reference.  Actual surveys or questionnaires will not be presented here.  Instead, the writer provides an overview and then inserts copies of the tools into the Appendix at the end of the paper.</ol>
+                        <ol>The third chapter of the Masters Thesis is the Materials and Methods, sometimes also referred to as the Study Design and Methodology.  It is in this section that the writer describes the sample population and procedures used in enough detail that others could replicate the study and verify its validity.  This section should begin with specific data on the number of study participants, how they were chosen, and relevant demographic information.  The writer may also present the rationale for the specific sample size used.  Next, all tools and instruments used in the study should be described.  If such tools are described in detail elsewhere in the literature, the writer can indicate this along with a relevant reference.  Actual surveys or questionnaires will not be presented here.  Instead, the writer provides an overview and then inserts copies of the tools into the Appendix at the end of the paper.</ol>
                       </div>
                     </div>
                     <div class="is-flex">
@@ -101,19 +46,17 @@
                       <span class="mt-1 has-text-white mr-3 is-flex has-background-primary is-justify-content-center is-align-items-center is-flex-shrink-0" style="width: 32px;height: 32px; border-radius: 50% !important;">5</span>
                       <div class="is-flex-direction-column">
                         <p class="has-text-weight-bold is-size-4-desktop is-size-6-mobile is-size-6-tablet">Conclusion</p>
-                        <ol>The final chapter of the Master’s thesis is the Conclusions chapter.  Here is where the writer sums up the entire project in one to two brief paragraphs.  This chapter should remind the reader of the initial problem statement or hypothesis and then relate that to the results from the study.  The writer should then present any conclusions reached or any new insights that arose from this work.  Finally, the writer should present the research in terms of the overall impact in the field.  For example, how will the results of this study change the way a person or organization behaves or makes decisions?  One caution when writing this chapter is not to merely reiterate the other portions of the thesis.  Instead, the writer should strive to leave a lasting impression upon the reader, conveying with the same passion that drove the research project the importance of the work completed.</ol>
+                        <ol>The final chapter of the Masters thesis is the Conclusions chapter.  Here is where the writer sums up the entire project in one to two brief paragraphs.  This chapter should remind the reader of the initial problem statement or hypothesis and then relate that to the results from the study.  The writer should then present any conclusions reached or any new insights that arose from this work.  Finally, the writer should present the research in terms of the overall impact in the field.  For example, how will the results of this study change the way a person or organization behaves or makes decisions?  One caution when writing this chapter is not to merely reiterate the other portions of the thesis.  Instead, the writer should strive to leave a lasting impression upon the reader, conveying with the same passion that drove the research project the importance of the work completed.</ol>
                       </div>
                     </div>
-      
-      
-      
-      
+       
                   </div>
                 </div>
               </div>
             </div>
+            {% endblock content %}
       
-      
+            {% block sidecolumn %} 
             <div class="column is-one-third"> 
               <div class="box has-background-white-ter p-3">
                 <h2 class="is-size-3-desktop is-size-4-mobile is-size-5-tablet has-text-weight-bold has-text-primary has-text-centered">Basic structural format of all masters Theses</h2>
@@ -125,11 +68,9 @@
                     <li>1 inch Margins</li> 
                     <li>APA format</li> 
                     <li>Delivery by e-mail by 11:59 PM PST on the date you specify</li> </div>
-      
-      
                   <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
                     <figure class="image is-256x256 p-5">
-                      <img class="is-square" src="https://images.pexels.com/photos/3768590/pexels-photo-3768590.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500">
+                      <img class="is-square" src="{% static 'images/woman-cellphone.webp' %}" alt="Woman on Cellphone" width="800" height="533">
                     </figure> 
                   </span>
       
@@ -148,11 +89,10 @@
                 </div>
               </div> 
       
-            </div>
-          </div>
-        </div> 
-      </section>
-        
+            </div> 
+            {% endblock sidecolumn %} 
+
+            {% block extra-section %}  
       <section class="has-background-primary">
         <div class="container">
           <div class="columns is-multiline is-centered">
@@ -167,7 +107,7 @@
                 <p class="has-text-dark mb-3">Every writer has at least a masters degree in their chosen field.</p>
                 <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
                   <figure class="image is-256x256 p-6">
-                    <img class="is-square" src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500">
+                    <img class="is-square" src="{% static 'images/professional.webp' %}" alt="Smiling Woman on Laptop" width="800" height="533">
                   </figure> 
                 </span>
               </div>
@@ -178,7 +118,7 @@
                 <p class="has-text-dark">Each writer utilizes the most up to date source material and most recent citation standards.</p>
                 <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
                   <figure class="image is-256x256 p-6">
-                    <img class="is-square" src="https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500">
+                    <img class="is-square" src="{% static 'images/knowledgable.webp' %}" alt="Man on Couch Reading Papers" width="800" height="589">
                   </figure> 
                 </span>
               </div>
@@ -189,33 +129,12 @@
                 <p class="has-text-dark">Our deadlines are guaranteed and all projects are sent according to the time-frame you specify.</p>
                 <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
                   <figure class="image is-256x256 p-6">
-                    <img class="is-square" src="https://images.pexels.com/photos/3783725/pexels-photo-3783725.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500">
+                    <img class="is-square" src="{% static 'images/reliable.webp' %}" alt="Woman with Glasses at Desk" width="800" height="529">
                   </figure> 
                 </span>
               </div>
             </div> 
-            <div class="container">
-              <div class="columns is-multiline is-centered">
-                <div class="column is-9 mb-4">
-                  <h2 class="has-text-white mt-5 mb-6 is-size-2-desktop is-size-4-mobile is-size-3-tablet has-text-weight-bold has-text-centered">Our Writers are Here to Help!</h2>
-                </div> 
-              </div> 
-            </div>
           </div> 
         </div>
       </section>
-        
-      <footer class="section has-background-dark">
-        <div class="container pb-5 has-text-centered">
-          <a class="mx-auto mb-4 is-inline-block" href="#">
-            <img class="image" src="bulma-plain-assets/logos/plainb-logo.svg" alt="" width="96px">
-          </a>
-        </div>
-        <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
-        <div class="container">
-          <p class="has-text-centered has-text-white">All rights reserved © MastersProposal.com - E World Publishing</p>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+      {% endblock extra-section %}  

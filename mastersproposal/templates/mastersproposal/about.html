@@ -1,47 +1,26 @@
 {% extends "mastersproposal/base.html" %}
 {% load static %} 
 {% block meta %}
-    <title>Page title</title>
+    <title>About MastersProposal.com</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content=""> 
+    <meta name="description" content=""> 
     {% endblock meta %} 
-
-    {% block hero %}  
-    <section class="about-cover is-relative is-small">
-      {% endblock hero %}
-       
-           
-          <div class="container p-3">
-            <div class="mb-5 is-vcentered columns">
-              <div class="columns is-multiline p-2 is-centered">
-                <div class="column is-8 mt-6 has-text-centered"> 
-                  <h2 class="has-text-white mt-2 mb-4 is-size-2-desktop is-size-5-mobile is-size-4-tablet has-text-weight-bold">Busy Professional in need of a Masters Thesis or Masters Proposal?</h2>
-                  <p class="subtitle is-size-6-mobile is-size-6-tablet has-text-grey-lighter">Take the stress out your masters Program! Let our writers provide a custom model thesis!</p>
-                  <div class="buttons is-centered"><a class="button is-primary mb-5 is-medium" href="#">Order a Paper Now!</a></div> 
-                </div>  
-              </div>
-            </div>
-          </div>
-        </div>   
-      </section> 
+  
         
-      <section class="section has-background-success">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-8">
-              <div class="box has-background-white-ter p-6">
+        {% block content %}  
                 <h2 class="mb-5 is-size-2 is-size-3-mobile has-text-weight-bold has-text-centered has-text-primary">About Us</h2>
                 <div class="has-text-dark mb-5 conStyle"> 
                   <p class="has-text-weight-bold is-size-4-desktop is-size-6-mobile is-size-6-tablet">Who We Are</p>
                   <p>We are a custom writing company that produces academic projects for students and busy professionals. Owned by E World Publishing, Inc. MastersProposal.com has been providing custom written masters proposals and masters theses for over 10 years.</p>
-                  <p class="has-text-weight-bold is-size-4-desktop is-size-6-mobile is-size-6-tablet">Family owned and operated!</p>
+                  <p class="has-text-weight-bold is-size-4-desktop is-size-6-mobile is-size-6-tablet">Family Owned and Operated!</p>
                   <p>MastersProposal.com is owned by E World Publishing, Inc. which is family owned and operated in Northeastern Pennsylvania. While we employ over 60 academic freelance writers, our office staff is a close and dependable group of sisters that you can talk to personally, any day of the week.</p>
-                </div>
-      
+                </div> 
               </div>
-            </div>
+            </div> 
+            {% endblock content %}
+
+            {% block sidecolumn %} 
             <div class="column is-one-third"> 
               <div class="box has-background-white-ter p-3">
                 <h2 class="is-size-3-desktop is-size-4-mobile is-size-5-tablet has-text-weight-bold has-text-primary has-text-centered">MastersProposal.com</h2>
@@ -53,10 +32,9 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-        
+            {% endblock sidecolumn %}
+ 
+            {% block extra-section %} 
       <section class="has-background-primary">
         <div class="container">
           <div class="columns is-multiline is-centered">
@@ -98,18 +76,4 @@
           </div>
         </div> 
       </section>
-        
-      <footer class="section has-background-dark">
-        <div class="container pb-5 has-text-centered">
-          <a class="mx-auto mb-4 is-inline-block" href="#">
-            <img class="image" src="bulma-plain-assets/logos/plainb-logo.svg" alt="" width="96px">
-          </a>
-        </div>
-        <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
-        <div class="container">
-          <p class="has-text-centered has-text-white">All rights reserved © MastersProposal.com - E World Publishing</p>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+      {% endblock extra-section %} 

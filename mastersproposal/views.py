@@ -15,8 +15,8 @@ def thesis(request):
 def services(request):
     return render(request, 'mastersproposal/services.html')
 
-def thesisformat(request):
-    return render(request, 'mastersproposal/thesisformat.html') 
+def thesesformat(request):
+    return render(request, 'mastersproposal/theses-format.html') 
 
 def topic(request):
     return render(request, 'mastersproposal/topic.html') 

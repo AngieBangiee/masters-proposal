@@ -9,53 +9,30 @@
     {% endblock meta %} 
 
     {% block hero %}  
-      <section class="hero hero-cover is-medium">
-        {% endblock hero %}
-
-
-        <div class="is-relative">
-          <nav class="navbar px-3 py-4 is-fixed-top"style="background-color: #333A56;">
-            <div class="navbar-brand">
-              <a class="navbar-item is-hidden-touch" href="#">
-                <img class="image" src="{% static 'images/mastersproposal-logo.svg' %}" alt="MastersProposal Logo" width="220px" height="220px">
-              </a>
-              <a class="navbar-item is-hidden-desktop" href="#">
-                <img class="image" src="{% static 'images/mastersproposal-logo.svg' %}" alt="MastersProposal Logo" width="220px" height="220px">
-              </a>
-              <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-            <div class="navbar-menu">
-              <div class="navbar-end"><a class="navbar-item" href="{% url 'mastersproposal:about' %}">About</a><a class="navbar-item" href="{% url 'mastersproposal:services' %}">Services</a><a class="navbar-item" href="{% url 'mastersproposal:proposals' %}">Proposals</a><a class="navbar-item" href="{% url 'mastersproposal:thesis' %}">Theses</a><a class="navbar-item" href="#">Prices</a><a class="navbar-item" href="#">Topics</a></div>
-              <div class="navbar-item"><a class="button is-dark" href="#">Order</a></div>
-            </div>
-          </nav>
+      <section class="hero hero-cover is-medium mt-6">
+        {% endblock hero %} 
 
           {% block herobody %}
           <div class="hero-body">
-            <div class="container">
-            <div class="mb-5 is-vcentered columns">
+            <div class="container"> 
               <div class="columns is-centered">
                 <div class="column is-8 mt-6 has-text-centered"> 
                   <h2 class="has-text-white mt-2 mb-4 is-size-2-desktop is-size-4-mobile is-size-3-tablet has-text-weight-bold">Busy Professional in need of a Masters Thesis or Masters Proposal?</h2>
                   <p class="subtitle has-text-grey-lighter">Take the stress out your masters Program! Let our writers provide a custom model thesis!</p>
-                  <div class="buttons is-centered"><a class="button is-primary mb-5 is-medium" href="#">Order Paper Now!</a></div> 
+                  <div class="buttons is-centered"><a class="button is-primary mb-5 is-medium" href="{% url 'mastersproposal:order' %}">Order Paper Now!</a></div> 
                 </div>  
               </div>
-            </div> 
-            </div>
+            </div>  
             </div> 
             {% endblock herobody %} 
       </section>
-        
+
+      {% block homepage %}
       <section class="section has-background-success">
         <div class="container">
           <div class="columns is-multiline is-align-items-center">
             <div class="column is-5 mb-5 p-5">
-              <img class="image is-fullwidth" src="https://images.pexels.com/photos/7640831/pexels-photo-7640831.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="">
+              <img class="image is-fullwidth" src="{% static 'images/plants-woman-computer.webp' %}" alt="Woman on Laptop" width="800px" height="800px">
             </div>
             <div class="column is-7 is-5-desktop ml-auto p-2">
               <div>
@@ -89,8 +66,8 @@
                     </svg>
                   </div>
                   <div>
-                    <h4 class="is-size-4 has-text-weight-bold mb-2">Thesis</h4>
-                    <p class="has-text-grey-dark mb-2">Payment plans and easy credit card payment available...Visa, MC, AmEx, Discover, PayPal and Western Union!</p>
+                    <h4 class="is-size-4 has-text-weight-bold mb-2">Payment</h4>
+                    <p class="has-text-grey-dark mb-2">Payment plans and easy credit card payment available...Visa, MasterCard, American Express and Discover!</p>
                     <p class="has-text-grey-dark">For Undergraduate level work, please visit our sister site: Paper Masters!</p>
                   </div>
                 </div>
@@ -117,7 +94,7 @@
        
             </div>
             <div class="column is-5 ml-auto p-5">
-              <img class="image is-fullwidth" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="">
+              <img class="image is-fullwidth" src="{% static 'images/custom-thesis-proposal.webp' %}" alt="Rows of Books" width="800px" height="800px">
             </div>
           </div>
         </div>
@@ -150,7 +127,7 @@
                 <p class="has-text-dark">Simple 3 step process puts you on the way to a complete masters thesis!</p>
                 <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
                   <figure class="image is-256x256 p-5">
-                    <img class="is-square" src="https://images.pexels.com/photos/3747518/pexels-photo-3747518.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260">
+                    <img class="is-square" src="{% static 'images/culibrary-bookshelf.webp' %}" width="800px" height="533px">
                   </figure> 
                 </span>
               </div>
@@ -166,7 +143,7 @@
                   <li>Free reference page</li>
                   <li>24 hour customer support</li>
                 </span>
-                <div class="buttons is-centered mt-4"><a class="button is-dark is-medium" href="#">Order Today!</a></div>
+                <div class="buttons is-centered mt-4"><a class="button is-dark is-medium" href="{% url 'mastersproposal:order' %}">Order Today!</a></div>
               </div>
             </div>
             <div class="column is-4 mb-4">
@@ -175,7 +152,7 @@
                 <p class="has-text-dark">Our customer service, confidentiality, quality of writers and integrity make us the only choice for academic excellence.</p>
                 <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
                   <figure class="image is-256x256 p-5">
-                    <img class="is-square" src="https://images.pexels.com/photos/3727463/pexels-photo-3727463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260">
+                    <img class="is-square" src="{% static 'images/excited-customer.webp' %}" width="1000px" height="667px">
                   </figure> 
                 </span>
               </div>
@@ -183,19 +160,5 @@
           </div>
         </div>
         </div> 
-      </section>
-        
-      <footer class="section ">
-        <div class="container pb-5 has-text-centered">
-          <a class="mx-auto mb-4 is-inline-block" href="#">
-            <img class="image" src="{% static 'images/mastersproposal-logo.svg' %}" alt="MastersProposal Logo" width="300px" height="250px">
-          </a>
-        </div>
-        <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
-        <div class="container">
-          <p class="has-text-centered has-text-white">All rights reserved © MastersProposal.com - E World Publishing</p>
-        </div>
-      </footer>
-         
-  </body>
-</html>
+      </section> 
+      {% endblock homepage %}

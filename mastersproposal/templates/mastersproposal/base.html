@@ -22,16 +22,16 @@
   <body>
 
     {% block hero %}  
-      <section class="hero hero-cover is-medium">
+    <section class="topic-cover is-relative is-small mt-6">
         {% endblock hero %}
 
         <div class="is-relative">
-            <nav class="navbar px-3 py-4 is-fixed-top"style="background-color: #333A56;">
+            <nav class="navbar px-3 py-4 is-fixed-top" style="background-color: #282d43;">
               <div class="navbar-brand">
-                <a class="navbar-item is-hidden-touch" href="#">
+                <a class="navbar-item is-hidden-touch" href="{% url 'mastersproposal:home' %}">
                   <img class="image" src="{% static 'images/mastersproposal-logo.svg' %}" alt="MastersProposal Logo" width="220px" height="220px">
                 </a>
-                <a class="navbar-item is-hidden-desktop" href="#">
+                <a class="navbar-item is-hidden-desktop" href="{% url 'mastersproposal:home' %}">
                   <img class="image" src="{% static 'images/mastersproposal-logo.svg' %}" alt="MastersProposal Logo" width="220px" height="220px">
                 </a>
                 <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
@@ -41,30 +41,27 @@
                 </a>
               </div>
               <div class="navbar-menu">
-                <div class="navbar-end"><a class="navbar-item" href="{% url 'mastersproposal:about' %}">About</a><a class="navbar-item" href="{% url 'mastersproposal:services' %}">Services</a><a class="navbar-item" href="{% url 'mastersproposal:proposals' %}">Proposals</a><a class="navbar-item" href="{% url 'mastersproposal:thesis' %}">Theses</a><a class="navbar-item" href="#">Prices</a><a class="navbar-item" href="#">Topics</a></div>
-                <div class="navbar-item"><a class="button is-dark" href="#">Order</a></div>
+                <div class="navbar-end"><a class="navbar-item" href="{% url 'mastersproposal:about' %}">About</a><a class="navbar-item" href="{% url 'mastersproposal:services' %}">Services</a><a class="navbar-item" href="{% url 'mastersproposal:proposals' %}">Proposals</a><a class="navbar-item" href="{% url 'mastersproposal:thesis' %}">Theses</a><a class="navbar-item" href="{% url 'mastersproposal:thesesformat' %}">Format</a><a class="navbar-item" href="{% url 'mastersproposal:topic' %}">Topics</a><a class="navbar-item" href="{% url 'mastersproposal:prices' %}">Prices</a></div>
+                <div class="navbar-item"><a class="button is-dark" href="{% url 'mastersproposal:order' %}">Order</a></div>
               </div>
             </nav>
 
             {% block herobody %}
             <div class="hero-body">
-             <div class="container hero-body">
-              <div class="mb-5 is-vcentered columns">
-                <div class="columns is-centered">
-                  <div class="column is-8 mt-6 has-text-centered"> 
-                    <h2 class="has-text-white mt-2 mb-4 is-size-2-desktop is-size-4-mobile is-size-3-tablet has-text-weight-bold">Busy Professional in need of a Masters Thesis or Masters Proposal?</h2>
-                    <p class="subtitle has-text-grey-lighter">Take the stress out your masters Program! Let our writers provide a custom model thesis!</p>
-                    <div class="buttons is-centered"><a class="button is-primary mb-5 is-medium" href="#">Order Paper Now!</a></div> 
-                  </div>  
+              <div class="container"> 
+                  <div class="columns p-2 is-centered">
+                    <div class="column is-8 mt-6 has-text-centered"> 
+                      <h2 class="has-text-white mt-2 mb-4 is-size-2-desktop is-size-5-mobile is-size-4-tablet has-text-weight-bold">Busy Professional in need of a Masters Thesis or Masters Proposal?</h2>
+                      <p class="subtitle is-size-6-mobile is-size-6-tablet has-text-grey-lighter">Take the stress out your masters Program! Let our writers provide a custom model thesis!</p>
+                      <div class="buttons is-centered"><a class="button is-primary mb-5 is-medium" href="{% url 'mastersproposal:order' %}">Order a Paper Now!</a></div>  
+                  </div>
                 </div>
-              </div> 
               </div>
-              </div> 
-              </div> 
+            </div>   
               {% endblock herobody %} 
         </section> 
 
-        {% block homepage %}
+        {% block homepage %} 
         <section class="section has-background-success">
           <div class="container">
             <div class="columns is-multiline">
@@ -87,9 +84,9 @@
 
         {% endblock homepage %}
 
-        <footer class="section ">
+        <footer class="section" style="background-color: #282d43;">
           <div class="container pb-5 has-text-centered">
-            <a class="mx-auto mb-4 is-inline-block" href="#">
+            <a class="mx-auto mb-4 is-inline-block" href="{% url 'mastersproposal:order' %}">
               <img class="image" src="{% static 'images/mastersproposal-logo.svg' %}" alt="MastersProposal Logo" width="300px" height="250px">
             </a>
           </div>
@@ -97,8 +94,7 @@
           <div class="container">
             <p class="has-text-centered has-text-white">All rights reserved © MastersProposal.com - E World Publishing</p>
           </div>
-        </footer>
-           
+        </footer> 
     </body>
   </html>
         

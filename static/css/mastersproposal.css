@@ -41,13 +41,13 @@
   background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/7944035/pexels-photo-7944035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
 }
 .hero-cover {
-  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/7972319/pexels-photo-7972319.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("../images/mp-header.webp")
 }
 .services-cover {
   background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
 }
 .topic-cover {
-  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("../images/topic-cover.webp")
 }
 .coverOne {
   background-color: #071425;
