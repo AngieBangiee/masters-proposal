@@ -1,20 +1,17 @@
 {% extends "mastersproposal/base.html" %}
 {% load static %} 
 {% block meta %}
-    <title>Page title</title>
+    <title>{{ meta_title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content=""> 
+    <meta name="description" content="{{ meta_description }}"> 
     {% endblock meta %} 
         
       
     {% block content %}   
-                <h2 class="mb-5 is-size-2 is-size-3-mobile has-text-centered has-text-primary has-text-weight-bold">Topic</h2>
-                <div class="has-text-dark mb-5 conStyle"> 
-                  <p>These types of questions led me to miss numerous deadlines, and I wasted time and energy in back-and-forth communication. Sadly, this situation could have been avoided if the wireframes had provided enough detail.</p>
-                  <p>These types of questions led me to miss numerous deadlines, and I wasted time and energy in back-and-forth communication. Sadly, this situation could have been avoided if the wireframes had provided enough detail.</p>
-                  <p>Now that I am a UX designer, I notice that some designers tend to forget that wireframes are equally creative and technical. We are responsible for designing great ideas, but we are also responsible for creating product specifications. I admit that there can be so many details to remember that it’s easy to lose track. To save time and energy for myself, I gathered all of my years of wireframing knowledge into a single checklist that I refer to throughout the process. And now I am sharing this knowledge with you, so that you can get back to being creative.</p>
-                  <p>These types of questions led me to miss numerous deadlines, and I wasted time and energy in back-and-forth communication. Sadly, this situation could have been avoided if the wireframes had provided enough detail. Now that I am a UX designer, I notice that some designers tend to forget that wireframes are equally creative and technical. We are responsible for designing great ideas, but we are also responsible for creating product specifications. I admit that there can be so many details to remember that it’s easy to lose track. To save time and energy for myself, I gathered all of my years of wireframing knowledge into a single checklist that I refer to throughout the process. And now I am sharing this knowledge with you, so that you can get back to being creative.</p>
+                <h2 class="mb-5 is-size-2 is-size-3-mobile has-text-centered has-text-primary has-text-weight-bold">{{ title }}</h2>
+                <div class="has-text-dark mb-5 conStyle">
+                  {{ content }}
                 </div>
               </div>
             </div>

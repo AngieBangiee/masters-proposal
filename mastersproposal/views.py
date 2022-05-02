@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Page
 
 def home(request):
     return render(request, 'mastersproposal/home.html') 
@@ -26,3 +27,14 @@ def prices(request):
 
 def order(request):
     return render(request, 'mastersproposal/order.html')
+
+def pages(request, slug):
+    slug = slug
+    page = Page.objects.get(slug=slug)
+    context = {
+        'meta_title':page.meta_title,
+        'meta_description':page.meta_description,
+        'title':page.title,
+        'content':page.content,  
+    }
+    return render(request, 'mastersproposal/page.html', context)

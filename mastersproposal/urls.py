@@ -6,6 +6,7 @@ app_name = 'mastersproposal'
 
 urlpatterns = [ 
     path('', views.home, name='home'), 
+    path('<slug:slug>/', views.pages, name='page'),
     url('about/', views.about, name='about'),
     url('masters-proposals/', views.proposals, name='proposals'),
     url('masters-thesis/', views.thesis, name='thesis'),
