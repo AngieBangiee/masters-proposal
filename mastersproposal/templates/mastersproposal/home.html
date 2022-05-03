@@ -1,0 +1,164 @@
+{% extends "mastersproposal/base.html" %}
+{% load static %} 
+{% block meta %} 
+    <title>Masters Proposal - Custom Written Masters Thesis and Masters Proposals!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Master thesis or masters proposals - custom written thesis by academic professionals.">
+    {% endblock meta %} 
+
+    {% block hero %}  
+      <section class="hero hero-cover is-medium mt-6">
+        {% endblock hero %} 
+
+          {% block herobody %}
+          <div class="hero-body">
+            <div class="container"> 
+              <div class="columns is-centered">
+                <div class="column is-8 mt-6 has-text-centered" style="text-shadow: 1px 1px 2px #333A56;"> 
+                  <h2 class="has-text-white mt-2 mb-4 is-size-2-desktop is-size-4-mobile is-size-3-tablet has-text-weight-bold">Busy Professional in need of a Masters Thesis or Masters Proposal?</h2>
+                  <p class="subtitle has-text-grey-lighter">Take the stress out your Masters Program! Let our writers provide a custom written thesis!</p>
+                  <p class="subtitle has-text-grey-lighter">Call <b>1-570-955-1444</b> 24/7 with any questions!</p>
+                  <div class="buttons is-centered"><a class="button is-primary mb-5 is-medium" href="{% url 'mastersproposal:order' %}">Order Paper Now!</a></div> 
+                </div>  
+              </div>
+            </div>  
+            </div> 
+            {% endblock herobody %} 
+      </section>
+
+      {% block homepage %}
+      <section class="section has-background-success">
+        <div class="container">
+          <div class="columns is-multiline is-align-items-center">
+            <div class="column is-5 mb-5 p-5">
+              <img class="image is-fullwidth" src="{% static 'images/plants-woman-computer.webp' %}" alt="Woman on Laptop" width="800px" height="800px">
+            </div>
+            <div class="column is-7 is-5-desktop ml-auto p-2">
+              <div>
+                <h2 class="mb-5 is-size-2 is-size-3-mobile has-text-weight-bold">Our Services</h2>
+                <div class="mb-4 is-flex">
+                  <div class="has-text-primary mr-2">
+                    <svg class="mt-2" style="width: 24px; height: 24px" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="is-size-4 has-text-weight-bold mb-2">Proposals</h4>
+                    <p class="has-text-grey-dark">Masters Proposal Services - Your Masters Proposal is the first step on the way to getting you your degree!</p>
+                  </div>
+                </div>
+                <div class="mb-4 is-flex">
+                  <div class="has-text-primary mr-2">
+                    <svg class="mt-2" style="width: 24px; height: 24px" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="is-size-4 has-text-weight-bold mb-2">Thesis</h4>
+                    <p class="has-text-grey-dark">Masters Thesis Services - We provide you with your model thesis - guaranteed custom written with quality research and sources.</p>
+                  </div>
+                </div>
+                <div class="is-flex">
+                  <div class="has-text-primary mr-2">
+                    <svg class="mt-2" style="width: 24px; height: 24px" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="is-size-4 has-text-weight-bold mb-2">Payment</h4>
+                    <p class="has-text-grey-dark mb-2">Payment plans and easy credit card payment available...Visa, MasterCard, American Express and Discover!</p>
+                    <p class="has-text-grey-dark">For Undergraduate level work, please visit our sister site: Paper Masters!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+      <section class="section has-background-dark">
+        <div class="container">
+          <div class="is-vcentered columns is-multiline">
+            <div class="column is-6 p-2">
+              <h2 class="has-text-white mb-2 is-size-2-desktop is-size-4-mobile is-size-3-tablet has-text-weight-bold">Custom Written Masters Theses and Masters Proposals:</h2>
+              <div class="has-text-success mb-3 ml-4">
+                <span class="px-2">
+                  <li>Your Hypothesis</li>
+                  <li>Your Topic</li>
+                  <li>Your University's Guidelines</li>
+                  <li>Our Writers</li>
+                </span>
+              </div>
+              <p class="has-text-grey-light mt-2 mb-5">It's that easy! Providing you with accurate, up to date research written only for you, never republished or posted to the internet and never been sold before.</p>
+       
+            </div>
+            <div class="column is-5 ml-auto p-5">
+              <img class="image is-fullwidth" src="{% static 'images/custom-thesis-proposal.webp' %}" alt="Rows of Books" width="800px" height="800px">
+            </div>
+          </div>
+        </div>
+      
+      </section>
+        
+      <section class="has-background-primary">
+        <div class="container">
+          <div class="columns is-multiline is-centered">
+            <div class="column is-9 mb-6">
+              <h2 class="has-text-white mt-6 mb-6 is-size-2-desktop is-size-4-mobile is-size-3-tablet has-text-weight-bold has-text-centered">Let the Professionals at MastersProposal.com Write your Masters Thesis</h2>
+              <div class="has-text-grey-light mb-3">
+                <div class="px-2 ml-5 mb-3">
+                  <li>Don't understand the complicated formatting requirements of your university?</li>
+                  <li>Methodology not your forte?</li>
+                  <li>No time with busy career or family?</li> 
+                </div> 
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="section pb-2 mb-5">
+        <div class="container is-relative">
+          <div class="columns is-multiline">
+            <div class="column is-4 mb-4">
+              <div class="box p-6 has-background-success has-text-centered" style="height: 100%">
+      
+                <h4 class="is-size-4 has-text-weight-bold has-text-primary">We Know Thesis Work</h4>
+                <p class="has-text-dark">Simple 3 step process puts you on the way to a complete masters thesis!</p>
+                <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
+                  <figure class="image is-256x256 p-5">
+                    <img class="is-square" src="{% static 'images/library-bookshelf.webp' %}" width="800px" height="533px">
+                  </figure> 
+                </span>
+              </div>
+            </div>
+            <div class="column is-4 mb-4">
+              <div class="box p-6 has-background-success is-covered" style="height: 100%">
+                <h4 class="is-size-4 has-text-weight-bold has-text-centered has-text-primary">What We Provide</h4>
+                <span class="px-2 ml-5 mb-3 has-text-dark">
+                  <li>Relevant and Recent sources</li>
+                  <li>Qualified writer with at least a masters degree in the related field</li>
+                  <li>Proper APA format</li>
+                  <li>Copies of sources used (upon request at time of order)</li>
+                  <li>Free reference page</li>
+                  <li>24 hour customer support</li>
+                </span>
+                <div class="buttons is-centered mt-4"><a class="button is-dark is-medium" href="{% url 'mastersproposal:order' %}">Order Today!</a></div>
+              </div>
+            </div>
+            <div class="column is-4 mb-4">
+              <div class="box p-6 has-background-success has-text-centered" style="height: 100%">
+                <h4 class="is-size-4 has-text-weight-bold has-text-centered has-text-primary">Gauranteed Quality</h4>
+                <p class="has-text-dark">Our customer service, confidentiality, quality of writers and integrity make us the only choice for academic excellence.</p>
+                <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
+                  <figure class="image is-256x256 p-5">
+                    <img class="is-square" src="{% static 'images/excited-customer.webp' %}" width="1000px" height="667px">
+                  </figure> 
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div> 
+      </section> 
+      {% endblock homepage %}

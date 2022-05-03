@@ -1,0 +1,63 @@
+{% extends "mastersproposal/base.html" %}
+{% load static %} 
+    {% block meta %}
+    <title>Order Custom Written Projects from MastersProposal.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Place your paper order on this page for a custom written masters thesis or masters proposal from MastersProposal. ">
+    {% endblock meta %}  
+         
+
+      {% block herobody %}
+        <div class="hero-body">
+        <div class="container"> 
+             
+          </div> 
+          </div>   
+    {% endblock herobody %} 
+        
+    {% block content %}
+                <div class="mb-5 conStyle"> 
+                  <h2 class="mb-5 is-size-3 is-size-3-mobile has-text-weight-bold has-text-centered has-text-dark">Order a Custom Masters Proposals or Theses</h2>
+                  <p class="has-text-dark has-text-weight-bold">Quick, Secure and Confidential</p>
+                  <div class="px-5 mb-4 mt-2 has-text-dark">
+                    <ul>1. Fill out the order form below.</ul>
+                    <ul>2. New customers receive a call within 12 hours to confirm <a class="has-text-primary" href="{% url 'mastersproposal:prices' %}">pricing</a> and your order information.</ul>
+                    <ul class="has-text-weight-bold">Note... New customers are NEVER charged before we call you to confirm the price and your information.</ul>
+                    <ul>3. Receive your project in e-mail on the date you specify below. It's that simple!</ul> 
+                  </div> 
+                </div>  
+                <div class="has-text-dark has-text-weight-bold mb-5 conStyle">  
+                  <p><em>If you have ANY trouble filling out the order form below, please call us at 1-570-955-1444.</em></p>  
+                  </div> 
+                  <!-- add form here-->
+              </div>
+
+            </div> 
+      {% endblock content %} 
+      {% block sidecolumn %}
+      <div class="column is-one-third"> 
+        <div class="box has-background-white-ter p-3">
+          <h2 class="is-size-3-desktop is-size-4-mobile is-size-5-tablet has-text-weight-bold has-text-dark has-text-centered">Custom Masters Proposals or Theses</h2>
+          <div class="has-text-dark p-4 mb-5">
+            <p class="mb-5"><b>ALL projects are custom written</b> by professional academic writers. Let go of the stress of never having enough time to complete all your projects. Get help today! Have our writers give you the perfect guide for your thesis or proposal.</p>
+            <img class="image" src="{% static 'images/payment-types.webp' %}" width="308" height="31" alt="Payment Options">
+            <p class="mb-5 pt-3">Safe, private and secure payment options - Guaranteed!</p>
+            
+            <h3 class="is-size-5-desktop has-text-weight-bold has-text-primary is-size-6-tablet mb-5">We Stand Behind Our Projects!</h3>
+             <div class="px-5 mb-4 mt-2">
+              <li>Plagiarism Free!</li>
+              <li>Will Pass TurnItin.com!</li>
+              <li>Your project is never resold!</li>
+              <li>Never added to a database!</li>
+              <li>Custom written just for you!</li>
+              <li>Delivered on time!</li>
+              <li>Call us today to learn more!</li>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      {% endblock sidecolumn %}

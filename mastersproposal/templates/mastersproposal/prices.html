@@ -1,0 +1,132 @@
+{% extends "mastersproposal/base.html" %}
+{% load static %}
+{% block meta %} 
+    <title>Prices of Masters Theses and Proposals at MastersProposals.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="MastersProposals.com prices for masters proposals are $27.95 per page and prices for masters theses are $31.95 per page.">  
+    {% endblock meta %}   
+    {% block link %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pricebox.mastersproposal.css' %}"> 
+    {% endblock link %}   
+    
+          {% block homepage %}   
+          <section class="has-background-success is-large">
+            <div class="container">
+              <div class="columns is-multiline is-centered">
+                <div class="column is-9">
+                  <h2 class="has-text-primary mt-6 mb-5 is-size-2-desktop is-size-4-mobile is-size-3-tablet has-text-weight-bold has-text-centered">Pricing at MastersProposal.com</h2>
+                  <p class="has-text-dark mb-4 has-text-centered is-size-5">Our pricing structure is very straight-forward.
+                    <b>We charge per page and have the following levels of service:</b></p>
+                </div>
+              </div>
+              </div> 
+ 
+              <div class="container pb-2 mt-6">
+                <div class="top"> 
+                  <div class="toggle-btn">
+                    <span style="margin: 0.8em;">Standard Delivery</span>
+                    <label class="switch">
+                      <input type="checkbox" id="checbox" onclick="check()" ; />
+                      <span class="slider round"></span>
+                    </label>
+                    <span style="margin: 0.8em;">RUSH Delivery</span>
+                  
+                </div>
+                <span class="small-red">(Due within the next 4 days)</span>
+                </div>
+            
+                <div class="package-container">
+                  <div class="packages has-background-primary">
+                    <h1>Masters Proposal</h1>
+                    <h2 class="text1">&dollar;41.95 <span class="small">per page</span></h2>
+                    <h2 class="text2">&dollar;27.95	<span class="small">per page</span></h2>
+              
+                    <ul class="list">
+                      <li class="first">Custom Written</li>
+                      <li>Free Plagiarism Check</li>
+                      <li>Free Reference Page</li>
+                      <li>24/7 Support</li>
+                    </ul>
+                    <div class="buttons is-centered mt-4 p-3"><a class="button is-warning is-outlined is-medium" href="{% url 'mastersproposal:order' %}">Order Now</a></div>
+                  </div>
+                   
+                  <div class="packages has-background-primary">
+                    <h1> Masters Thesis</h1>
+                    <h2 class="text1">&dollar;41.95 <span class="small">per page</span></h2>
+                    <h2 class="text2">&dollar;31.95 <span class="small">per page</span></h2>
+                    <ul class="list">
+                      <li class="first">Custom Written</li>
+                      <li>Peer-Reviewed Sources</li>
+                      <li>Writer has Doctorate</li>
+                      <li>24/7 Support</li>
+                    </ul>
+                    <div class="buttons is-centered mt-4 p-3"><a class="button is-warning is-outlined is-medium" href="{% url 'mastersproposal:order' %}">Order Now</a></div>
+                  </div>
+                </div>
+              </div>
+    </section>
+    
+       
+    {% block extra-section %}  
+    <section class="section has-background-dark">
+      <div class="container">
+        <h2 class="has-text-white mt-2 is-size-2-desktop is-size-5-mobile is-size-4-tablet has-text-weight-bold has-text-centered">Benefits of Our Services</h2>
+        <div class="columns is-multiline mt-3">
+          <div class="column is-4 mb-3 is-flex">
+            <div class="is-flex"> 
+              <div>
+                <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
+                  <figure class="image is-256x256 p-5">
+                    <img class="is-square" src="{% static 'images/more-time.webp' %}" alt="Man Looking at Watch" width="800" height="533">
+                  </figure> 
+                </span>
+                <p class="has-text-success mb-2">Helping you through one of the busiest times in your life!</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4 mb-3 is-flex"> 
+            <div>
+              <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
+                <figure class="image is-256x256 p-5">
+                  <img class="is-square" src="{% static 'images/customer-service.webp' %}" alt="S=Customer Service Representative" width="800" height="533">
+                </figure> 
+              </span>
+              <p class="has-text-success mb-2">Always here to help! 24 hours a day...7 days a week.</p>
+            </div>
+          </div>
+          <div class="column is-4 mb-3 is-flex">
+            <div>
+              <span class="mx-auto mb-4 is-flex is-justify-content-center is-align-items-center">
+                <figure class="image is-256x256 p-5">
+                  <img class="is-square" src="{% static 'images/order-creditcard.webp' %}" alt="Credit Card and Cellpone" width="800" height="533">
+                </figure> 
+              </span>
+              <p class="has-text-success mb-2">Easy Order and credit card payment available... Visa, Mastercard, AmericanExpress, Discover and Western Union!</p>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    {% endblock extra-section %}
+    {% endblock homepage %}
+    {% block scripts %}
+    <script>
+      function check() {
+     var checkBox = document.getElementById("checbox");
+     var text1 = document.getElementsByClassName("text1");
+     var text2 = document.getElementsByClassName("text2");
+     
+     for (var i = 0; i < text1.length; i++) {
+       if (checkBox.checked == true) {
+         text1[i].style.display = "block";
+         text2[i].style.display = "none";
+       } else if (checkBox.checked == false) {
+         text1[i].style.display = "none";
+         text2[i].style.display = "block";
+       }
+     }
+     }
+     check();
+     </script>
+    {% endblock scripts %}

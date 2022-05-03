@@ -1,0 +1,107 @@
+.conStyle h1,
+.conStyle h2,
+.conStyle h3,
+.conStyle h4 {
+  text-align: center;
+  color: #071425
+}
+.about-cover,
+.content-cover,
+.footer-cover,
+.hero-cover,
+.masters-cover,
+.proposal-cover,
+.services-cover,
+.thesis-fomat-cover,
+.topic-cover {
+  background-repeat: repeat,no-repeat;
+  background-attachment: local;
+  background-size: cover
+}
+.conStyle h1 {
+  font-size: 30px;
+  margin-bottom: 20px
+}
+.conStyle h2,
+.conStyle h3 {
+  font-size: 24px;
+  margin: 20px 0
+}
+.conStyle,
+.conStyle h4 {
+  margin-bottom: 20px
+}
+.conStyle h4 {
+  font-size: 30px
+}
+.content-cover {
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/4050347/pexels-photo-4050347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+}
+.footer-cover {
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/7944035/pexels-photo-7944035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+}
+.hero-cover {
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("../images/mp-header.webp")
+}
+.services-cover {
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+}
+.topic-cover {
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("../images/topic-cover.webp")
+}
+.coverOne {
+  background-color: #071425;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23444f5e' fill-opacity='0.61'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+}
+.cover {
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.7)),url("https://images.pexels.com/photos/7972319/pexels-photo-7972319.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+}
+.conStyle p {
+  font-size: 16px;
+  margin-bottom: 18px
+}
+.conStyle ol,
+.conStyle ul {
+  margin-bottom: 20px
+}
+.conStyle img {
+  padding: 5px
+}
+.hero-divider {
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transform: rotate(180deg);
+  z-index: 10
+}
+.hero-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px
+}
+.hero-divider .shape-fill {
+  fill: rgb(247,245,230)
+}
+.glassPanel {
+  background-image: linear-gradient(to right bottom,rgba(255,255,255,.3) 0,rgba(255,255,255,.1) 100%);
+  border-radius: 12px;
+  box-shadow: rgba(255,255,255,.5) -20px -20px 45px inset,rgba(0,0,0,.1) 10px 10px 20px,rgba(0,0,0,.06) 5px 5px 10px;
+  position: relative
+}
+.masters-cover {
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/7034720/pexels-photo-7034720.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+}
+.about-cover {
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/3807770/pexels-photo-3807770.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+}
+.proposal-cover {
+  background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/2334083/pexels-photo-2334083.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+}
+.thesis-fomat-cover {
+background-image: linear-gradient(rgba(82,101,143,.65),rgba(82,101,143,.75)),url("https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+}
+
