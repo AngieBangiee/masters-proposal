@@ -11,7 +11,7 @@
     {% block content %}   
                 <h2 class="mb-5 is-size-2 is-size-3-mobile has-text-centered has-text-primary has-text-weight-bold">{{ title }}</h2>
                 <div class="has-text-dark mb-5 conStyle">
-                  {{ content }}
+                  {{ content | safe }}
                 </div>
               </div>
             </div>
